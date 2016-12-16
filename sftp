@@ -1,0 +1,11 @@
+sftp Charles@landingpad.ddns.net
+    ls          (remote)ls
+    lls         (local)ls
+    pwd         (remote)pwd
+    lpwd        (local)pwd
+    etc. cd...
+    put [localfile]
+    get [remotefile]
+
+
+(assuming rsa key's are in place)

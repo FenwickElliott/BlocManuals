@@ -1,0 +1,156 @@
+types:
+    string
+    number
+    boolean
+    undefined
+    object
+
+incrimators:
+    +=
+    -=
+    *=
+    /=
+    ++
+    --
+
+Evaluators:
+    ===
+    ==
+    !=
+    >
+    >=
+    <
+    <=
+
+Logical Operators:
+    &&
+    ||
+
+definitions:
+    var variable = 1
+
+Loops:
+
+        for (i=0; i<10; 1++){
+            ...;
+        };
+
+        while (condition){
+            ...;
+        };
+
+        if (condition){
+            ...;
+        } else if (condition) {
+            ...;
+        } else {
+            ...;
+        };
+
+        switch (xyz){
+            case 'abc':
+                ...;
+            break;
+            case 'def':
+                ...;
+            break;
+            case 'ghi':
+                ...;
+            break;
+            default:
+                ...;
+            break;
+        };
+
+escape sequences:
+    \t
+    \n
+    \\
+
+Printing / alerting:
+    console.log("...")
+    alert("...")
+    confirm("...")
+    var ans = prompt("...")
+
+Functions:
+    function multiply (a,b){
+        return a * b;
+    }; //"declared funciton" loads at boot
+
+    var multiply = function(a,b){
+        return a*b;
+    }; //"funtion expression" loads when called
+
+Arrays (and Array Methods):
+    var array = [True, 123, "String"];
+    array.length
+    array.pop(); //removes and returns last array cell
+    array.push(...); //adds ... to end of array
+    array.shift();//returns and deletes first array cell
+    array.reverse();
+    array.sort();
+    array.join();
+    array.reduce();
+    array.slice();
+    array.splice(i,1) // removes and returns array[i]
+    2D arrays:
+        array1 = [1,2,3];
+        array2 = ["a","b","c"];
+        multiDimentionalArray = [array1, array2];
+        multiDimentionalArray[0][1] //returns "b"
+    array.map(function(i){return i})
+        var before = [0,1,2,3,4,5];
+        var after = before.map(function(i){return i*2})
+        alert(after)
+
+String Methods:
+    string.length;
+    string.charAt;
+    string.trim();
+    string.concat();
+    string.indexOf();
+    string.replace();
+    string.toUpperCase();
+    string.toLowerCase();
+    string.substring();
+
+Number Methods:
+    number.toFixed();
+    number.toExponential();
+    number.toPrecision();
+
+Objects:
+    var eg = {
+        key1: value1,
+        key2: value2,
+        method1: function(){}
+    } //object litteral formation
+
+    eg.key3 = value3;
+    eg.method2: function(){};
+    eg["key4"] = value4;
+    eg[method3] = function(){};
+
+    delete eg.key1;
+
+Prototypes:
+    Object.prototype.newMethod = function(){};
+
+constructors:
+    function EgClass (a,b,c){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+    var eg = new EgClass(1,2,3)
+
+    var duplicate = Object.create(eg); // creates an object called 'duplicate' that is a carbon copy of eg.
+
+
+
+"String".length
+array.length
+"String".charAt(i)
+typeof x
+array.map([somefuncition])

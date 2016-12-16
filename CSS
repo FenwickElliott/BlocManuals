@@ -1,0 +1,34 @@
+[selector]{
+    [property]: [value];
+}
+
+[.eg] [p]{} /* will select only the paragraph in the class="eg"*/
+input[type=...]{} /* styles input areas of forms*/
+.[eg]:hover{}
+
+properties:
+    text:
+        color:
+        text-decoration:
+        font-size:
+        font-family:
+        text-align:
+        text-transform:
+        font:
+        font-weight:
+        font-style:
+        line-height:
+    box model:
+        width:
+        height:
+        padding: [top right bottom left]
+        border: [width style color]
+        margin: [top right bottom left]
+        display:
+        float:
+        transform:
+        background: [color image position repeat]
+
+
+box model styling:
+    see: 1.2FrontedFormation.pdf from slide 224 onward
