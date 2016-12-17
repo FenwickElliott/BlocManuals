@@ -36,6 +36,7 @@ git clone [url...] [alternate name]     will clone the repo but with an alternat
 
 git push [origin] [branch]
 git push -u [origin] [branch]   set's origin / master as default for subsequent pushes
+git push -f [origin] [branch]   forces overwrite of remote with master
 git push
 
 git fetch                       syncs local repo with remote repo

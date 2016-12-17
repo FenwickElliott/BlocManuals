@@ -134,9 +134,6 @@ Objects:
 
     delete eg.key1;
 
-Prototypes:
-    Object.prototype.newMethod = function(){};
-
 constructors:
     function EgClass (a,b,c){
         this.a=a;
@@ -147,6 +144,14 @@ constructors:
 
     var duplicate = Object.create(eg); // creates an object called 'duplicate' that is a carbon copy of eg.
 
+Prototypes:
+    Object.prototype.newMethod = function(){};
+
+    EgClass.prototype={
+        a: undefined;
+        b: undefined;
+        c: undefined;
+        }
 
 
 "String".length
