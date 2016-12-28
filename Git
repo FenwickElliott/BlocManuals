@@ -21,7 +21,9 @@ git reset --soft HEAD^          removes all of last commit to staging leaving HE
 git reset --hard HEAD^          completely erases all of last commit leaving HEAD at HEAD-1
 
 
-git checkout -- [...]            replaces ... with it's state at last commit
+git checkout ...                create or switch to ...
+git checkout -b ...             create and switch to ...
+git checkout -- [...]           replaces ... with it's state at last commit
 
 
 
@@ -52,8 +54,10 @@ git checkout -b [branch]        creates and checks out [branch]
 git branch                      prints all local branches and highlights the selected one
 git branch -r                   prints all remote branches
 git remote show origin
-git push [origin] :[branch]       deletes remote branch
+git push [origin] :[branch]     deletes remote branch
 git remote prune origin         deletes reference to stale branches
+
+git branch -m ...               renames branch as ... (must then be pushed/pulled)
 
 git tag                         list all tags
 git checkout [tag]              checks out code at commit tagged [tag]

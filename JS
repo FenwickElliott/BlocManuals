@@ -1,3 +1,22 @@
+
+Events: // will trigger functions on the completion of certain events
+    window.onload = function(){...}; // will run when page has finished loading
+        window.addEventListener(..., fx()){} // listens for ... and fires fx()
+
+        addEventListener('trigger', function(event){
+
+            ...;
+        });
+
+    this.addEventListener('tirgger', externalFunction, boolean);
+
+    boolean:
+        true // capturing (outside -> in) (parent first)
+        false (default) // bubbeling (inside -> out) (child first)
+    triggers:
+        click
+        mouseover
+
 types:
     string
     number
@@ -104,9 +123,11 @@ Arrays (and Array Methods):
         var after = before.map(function(i){return i*2})
         alert(after)
 
+    array.forEach(callBack)     // runs each cell of array through the callback function
+
 String Methods:
     string.length;
-    string.charAt;
+    string.charAt();
     string.trim();
     string.concat();
     string.indexOf();
@@ -119,6 +140,8 @@ Number Methods:
     number.toFixed();
     number.toExponential();
     number.toPrecision();
+
+    Math.pow(x,y); // ==> x^y
 
 Objects:
     var eg = {

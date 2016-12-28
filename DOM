@@ -1,0 +1,23 @@
+NodeList:
+    Does not inherit from Array.prototype
+    Access:
+        document.querySelectorAll("p")[0];          // preferred
+        document.querySelectorAll(".eg").item(0);     // slower
+
+
+Selectors:
+    document.querySelector()            // First element node
+    document.querySelectorAll()[]         // Static NodeList
+    document.getElementById()[]           // Referenced element
+    document.getElementsByClassName()[]   // Live NodeList
+    document.getElementsByTagName()[]     // Live NodeList
+
+    suffixes:
+        .firstChild
+        .lastChild
+        .childNodes
+        .nodeValue
+        .textContent
+        .innerText
+        .innerHTML
+        .outerHTML
