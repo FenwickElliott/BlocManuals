@@ -8,8 +8,8 @@ git log                         shows log of previous commits
 git diff                        shows differences unstaged files since last commit
 git diff --staged               shows differences staged files since last commit
 
-git add [file1] [file2]
-git add --all
+git add file1 [file2]
+git add --all || add .
 
 git commit                      commits and opens vi editor for comment
 git commit -m "Comment123"      commits and adds comment123
@@ -29,7 +29,7 @@ git checkout -- [...]           replaces ... with it's state at last commit
 
 
 
-git remote add origin [https://github.com/Fender/example.git]
+git remote add origin [https://github.com/FenwickElliott/example.git]
 git remote rm <remoteName>      Removes remote
 git remote -v                   lists all know remote repos
 

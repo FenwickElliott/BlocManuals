@@ -1,3 +1,17 @@
+Objects:
+    window
+    event listeners
+
+Callback Functions:
+
+Event Handlers:
+
+getAttribute('exampleAttribute')
+
+Properties:
+    window.innerHeight
+    getBoundingClientRect
+
 NodeList:
     Does not inherit from Array.prototype
     Access:
@@ -11,6 +25,7 @@ Selectors:
     document.getElementById()[]           // Referenced element
     document.getElementsByClassName()[]   // Live NodeList
     document.getElementsByTagName()[]     // Live NodeList
+    document.getAttribute('exampleAttribute')
 
     suffixes:
         .firstChild

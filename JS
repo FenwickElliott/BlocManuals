@@ -17,6 +17,9 @@ Events: // will trigger functions on the completion of certain events
         click
         mouseover
 
+.getBoundingClientRect()
+
+
 types:
     string
     number
@@ -68,6 +71,7 @@ Loops:
 
         switch (xyz){
             case 'abc':
+            [case 'ABC']:
                 ...;
             break;
             case 'def':
