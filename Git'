@@ -27,8 +27,12 @@ git reset --hard/--soft [HEAD[^]]
     HEAD^^ two heads back
 
 git remote add origin https://github.com/FenwickElliott/example.git
+git remote add piHub ssh Charles@fenwickelliott.io:/home/Charles/playGround
 git remote rm remoteName // Removes remote
 git remote -v
+
+git stash
+git stash apply
 
 git clone [url...]
 git clone [url...] [alternate name]     will clone the repo but with an alternative name

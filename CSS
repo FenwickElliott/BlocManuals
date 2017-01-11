@@ -1,5 +1,17 @@
-[selector]{
+[selector]{   //http://www.w3schools.com/cssref/css_selectors.asp
     [property]: [value];
+}
+
+element {
+
+}
+
+.class{
+
+}
+
+#id{
+
 }
 
 [.eg] [p]{} /* will select only the paragraph in the class="eg"*/
@@ -32,3 +44,14 @@ properties:
 
 box model styling:
     see: 1.2FrontedFormation.pdf from slide 224 onward
+
+p {
+    display: block; //default
+}
+
+display:
+    inline // each element is displayed on the same line while space allows
+    block //each element is displayed on a new line under the previous
+    flex
+    table
+    table-cell etc...

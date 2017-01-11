@@ -51,7 +51,7 @@ Logical Operators:
 definitions:
     var variable = 1
 
-Loops:
+Loops: // conditions with one clause trigger when clause evaluates to true
 
         for (i=0; i<10; 1++){
             ...;

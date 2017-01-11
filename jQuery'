@@ -1,0 +1,60 @@
+Selectors:
+    $('div') // selects all divs
+    $('.class')
+    $('#id')
+
+decorations:
+    var $newjQueryObject = $('[exampleSelector]');
+
+Methods:
+    .addClass("exampleClass")
+    .removeClass("exampleClass")
+    .hide(['slow'])
+    .preventDefault()
+    .height() //gets or sets
+    .offset().top
+    .scrollTop
+    .css()  // $('a').css('color', 'red');
+    .empty()
+    .append()
+    .remove()
+    .text()
+    .attr() // $albumImage.attr('src', album.albumArtUrl);
+    .find()
+    .click()
+    .hover()
+    .html()
+
+
+    .get("examplePage.html", myCallBack); // call back function with no parameters
+    .get("examplePage.html", function(){ // call back function with parameters
+        myCallBack( x, y );
+    })
+
+    .ready(function(){
+        .click(function(event){
+            ...;
+        })
+    })
+
+
+
+
+
+Event handlers:
+    .ready
+    .click
+    .scroll
+
+
+
+
+
+    $(document/window).ready(function){
+        ...;
+    });
+
+    $('a').click(function(event){
+        ...;
+        [event.preventDefault();]
+    });

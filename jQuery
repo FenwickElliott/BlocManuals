@@ -1,3 +1,60 @@
 $(document).ready(function(){
     ...;
 });
+
+$.each($('.point'), revealPoint);
+
+$(this).hide('slow');
+
+$.get("index.html", callBack); // executes callBack(), can't take any parameters
+
+$.get("index.html", function(){
+    exampleCallBack([parameter]);
+});
+
+$(document).ready(function(){
+    ...''
+});
+
+$(window).load(function(){
+    ...;
+});
+
+$(window).scroll(function(event){
+    ...;
+});
+
+-----
+
+var animatePoints = function (){
+	var revealPoint = function(){
+		$(this).css({
+			opacity: 1,
+			transform: 'scaleX(1) translateY(0)'
+		});
+	};
+	$.each($('.point'), revealPoint);
+};
+
+-------
+
+$( document ).ready(function() {
+
+    $( "a" ).click(function( event ) {
+
+        alert( "Thanks for visiting!" );
+
+    });
+
+});
+
+---------
+
+var buildCollectionItemTemplate = function(){
+	var template =
+     '<div class="collection-album-container column fourth">'
+   + '  <img src="assets/images/album_covers/01.png"/>'
+   ;
+
+	return $(template);
+}
