@@ -27,7 +27,7 @@ git reset --hard/--soft [HEAD[^]]
     HEAD^^ two heads back
 
 git remote add origin https://github.com/FenwickElliott/example.git
-git remote add piHub ssh Charles@fenwickelliott.io:/home/Charles/playGround
+git remote add piHub ssh Charles@fenwickelliott.io:/home/Charles/example.git
 git remote rm remoteName // Removes remote
 git remote -v
 

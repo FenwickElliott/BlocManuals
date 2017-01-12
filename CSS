@@ -14,6 +14,12 @@ element {
 
 }
 
+@media ([min-width: 640px]){
+    html .class #id{
+        color: blue
+    }
+}
+
 [.eg] [p]{} /* will select only the paragraph in the class="eg"*/
 input[type=...]{} /* styles input areas of forms*/
 .[eg]:hover{}

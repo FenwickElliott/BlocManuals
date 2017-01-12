@@ -1,0 +1,14 @@
+Document Object Modeling
+
+Document = page // index.html
+Node = document object // document > html > body > div ...
+Selector = document object method // .getElementByClassName('exampleClass')
+NodeList = array of nodes
+
+-----
+
+var exampleNodeList = document.getElementsByClassName('exampleClass');
+
+for (var i=0; i<exampleNodeList.length; i++){
+    console.log(exampleNodeList[i]);
+}
