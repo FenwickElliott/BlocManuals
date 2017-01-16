@@ -1,0 +1,6 @@
+Click to identify object:
+    window.onload = function(){
+        document.addEventListener('click', function(){
+            alert(event.target);
+        });
+    };
