@@ -1,0 +1,42 @@
+Modules:
+  -controllers
+  -services
+  -filters
+  -directives
+
+  angular.module('myModule', []).
+    config(function(injectables) { // provider-injector
+      // This is an example of config block.
+      // You can have as many of these as you want.
+      // You can only inject Providers (not instances)
+      // into config blocks.
+    }).
+    run(function(injectables) { // instance-injector
+      // This is an example of a run block.
+      // You can have as many of these as you want.
+      // You can only inject instances (not Providers)
+      // into run blocks
+    });
+
+  Bootstraping phase:
+    1. the injector that will be used for dependency injection is created.
+    2. the injector will create the root scope.
+    3. angular will compile the DOM starting at the ngApp root element processing any directives and bindings found along the way.
+
+
+
+angular.module('myModule', []) // declares module
+angular.module('myModule') // retrives a module
+
+ng-app // tag attribute directing to angular
+  <html ng-app="blocJams"> directing to blocJams module
+{{}} // Angular expression ie. a binding tag
+  <p>1 + 2 = {{1+2}}</p> //perfectly valid example
+
+
+  <ul>
+    <li ng-repeat="phone in phones">
+      <span>{{phone.name}}</span>
+      <p>{{phone.snippet}}</p>
+    </li>
+  </ul>

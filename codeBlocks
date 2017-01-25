@@ -1,6 +1,33 @@
 Click to identify object:
-    window.onload = function(){
-        document.addEventListener('click', function(){
-            alert(event.target);
-        });
-    };
+window.onload = function(){
+
+	document.addEventListener('click', function(){
+
+		var x = event.target;
+		console.log("event:" + event);
+		console.log("event.target" + x);
+		console.log("parent:" + x.parentElement);
+		console.log("innerHTML: " + x.innerHTML);
+		console.log("className: " +x.classNAme);
+
+	});
+};
+
+alertParents:
+	window.onload = function(){
+		document.addEventListener('click', function(){
+			for (var i=0; i<5; i++){
+				alert(x.className);
+				x = x.parentElement;
+			}
+		})
+	}
+
+tertiary opperators:
+
+	return index == (currentAlbum.songs.length - 1) ? 1 : index + 2;
+
+			if (index == (currentAlbum.songs.length - 1) == 1)
+				return 1;
+			else
+				return index + 2;
