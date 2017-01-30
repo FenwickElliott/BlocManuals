@@ -1,8 +1,17 @@
 Modules:
   -controllers
+    // The controller is simply a constructor function that takes a $scope parameter
   -services
   -filters
   -directives
+    (-components ie template+controller)
+
+Angular Modules:
+  -services
+  -directives
+  -services
+  -filters
+  -configuration information
 
   angular.module('myModule', []).
     config(function(injectables) { // provider-injector
@@ -17,6 +26,15 @@ Modules:
       // You can only inject instances (not Providers)
       // into run blocks
     });
+
+angular.
+  module('myApp').
+  component('greetUser', {
+    template: 'Hello, {{$ctrl.user}}!',
+    controller: function GreetUserController() {
+      this.user = 'world';
+    }
+  });
 
   Bootstraping phase:
     1. the injector that will be used for dependency injection is created.

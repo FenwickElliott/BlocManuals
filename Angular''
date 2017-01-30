@@ -1,0 +1,29 @@
+angular // global object with associated methods
+
+Modules:
+    angular.module('exampleModule', [dependency1, dependency2]); // sets module with any assosiated dependancies
+    angular.module('exampleModule'); // gets module
+    var app = angular.module('app',[]); // defines app as specified module
+    <html ng-app="exampleModule"></html> // bootstraps module
+
+
+
+angular methods:
+  angular
+    .module('moduleName', [dependencyInjections])
+    .config(config);
+
+$stateProvider.state(stateName, stateConfig) //stateName is a string, stateConfig with numerous properites including url, template url etc.
+
+
+
+function config // defines config. $stateProvider defines states, $locationProvider maps links
+
+
+function config($stateProvider, $locationProvider){
+   $locationProvider
+       .html5Mode({
+           enabled: true,
+           requireBase: false
+       });
+}

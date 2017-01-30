@@ -1,0 +1,14 @@
+
+Functions:
+    /**
+    * @function setSong // Name of the function
+    * @desc Stops currently playing song and loads new audio file as currentBuzzObject // A short description
+    * @param {Object} song // A list of parameters and their type
+    * @returns {Number} //
+    */
+
+Attributes:
+    /**
+    * @desc Buzz object audio file // A short description
+    * @type {Object} // The type, such as {Object}, {Array}, {Number}, etc.
+    */

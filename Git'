@@ -27,6 +27,7 @@ git reset --hard/--soft [HEAD[^]]
     HEAD^^ two heads back
 
 git merge -X theirs [branch]
+git branch -m new_name // renames current branch to new_name
 
 git remote add origin https://github.com/FenwickElliott/example.git
 git remote add piHub ssh Charles@fenwickelliott.io:/home/Charles/example.git
