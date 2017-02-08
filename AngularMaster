@@ -1,0 +1,78 @@
+(function(){
+    function config($stateProvider, $locationProvider, $urlRouterProvider){
+        $locationProvider
+            .html5Mode({
+            enabled: true,
+            requireBase: false
+        });
+
+        $urlRouterProvider.otherwise("/");
+
+        $stateProvider
+        .state('landing', {
+            url: '/',
+            controller: 'LandingCtrl as landing',
+            templateUrl: '/templates/landing.html'
+        })
+        .state('album', {
+            url: '/album',
+            controller: 'AlbumCtrl as album',
+            templateUrl: '/templates/album.html'
+        })
+        .state('collection', {
+            url: '/collection',
+            controller: 'CollectionCtrl as collection',
+            templateUrl: '/templates/collection.html'
+        });
+    }
+    function ExampleCtrl(){...}
+
+    angular
+        .module('blocJams', ['ui.router'])
+        .config(config)
+        .controller('ExampleCtrl', [dep1, dep2, ExampleCtrl]);
+})();
+
+.module: defines blocJams as our root module, any injected modules will be listed in the array.
+.config: sets config based on previously defined values in function config($stateProvider, $locationProvider)
+.controller: establishes a controller (1st parameter), injects any dependancies (dep1, dep2), gives call back function ExampleCtrl.
+
+Controllers:
+    Are objects
+    Created by constructor functions
+    have their own $scope
+
+Services:
+    Are objects containing utility functions (/methods)
+    must be injected as dependencies
+    angular has some native services or new services can be written and introduced
+
+Directives:
+    
+
+
+{{}}
+    controller: 'ExampleCtrl as eg' //in state definition
+    this.dynamicToken = blahBlahBlah;
+    in HTML: {{ eg.dynamicToken }} // reads as blahBlahBlah
+
+Angular Directives:
+    ngApp: Designates root element of application
+        <html ng-app="blocJams">
+    ngController: Attaches a controller to the view
+        <section class="player-bar" ng-controller="PlayerBarCtrl as playerBar">
+    ngRepeat: Instantiates a template once per item from a container
+        ng-repeat="song in album.albumData.songs track by $index"
+    ngClick: Allows us to specify custom behavior when an element is clicked
+        ng-click="album.songPlayer.play(song)"
+    ngShow: Shows or hides the given HTML element based on the expression provided
+        ng-show="!song.playing && !hovered"
+    ngHide:
+    ngMouseover:
+    ngMouseleave:
+
+UI-Router Directives:
+    ui-view: place holder, is replaced by specified template
+        <ui-view></ui-view>
+    ui-sref: link to state, equivical to href, used in <a> tags
+        <a ui-sref="landing" class="logo">
